@@ -1,18 +1,29 @@
 # UX
 
 who is it for?
-* As a user...
+* As a user I want to quickly understand what the game is all about.
+* As a user I want to get in a cheerful mood.
+* As a user I want to gain something more than just having fun, in this case concentration and memory skills.
+* As a user, I want to be able to chose whether I want to listen to the happy game music or not.
 
-practice for developing concentration and memory skills.
-visually aimed for kids /happy
 
 ## Design
+
+I visually aimed the look for kids. I specifically had my kids in mind when making it with happy, bright and colourful colors and funny looking faces with different moods. The different moods of faces also is a good thing for kids to think about. "Is that face happy or sad?"
 
 ### Wireframe
 
 ## Features
 
+* score
+* music
+* bouncing brain to make the page more alive
+* se amount of flipped cards
+* Get scores
+
 ## Features left to implement
+
+* timing
 
 # Technologies Used
 

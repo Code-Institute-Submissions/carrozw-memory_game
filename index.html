@@ -18,6 +18,13 @@
         <div class="container">
             <nav class="navbar navbar-default">  
                 <div class="instructions-title" data-toggle="collapse" data-target="#instructions">Instructions</div>
+                <div class="music">
+                    <i class="fas fa-music"></i>
+                    <i class="fas fa-play" id="playIcon" alt="play" onclick="HandleAudio()"><audio id="gameSong">
+                        <source src="assets/media/gameSong.mp3" type="audio/mp3">
+                    </audio></i>
+                </div>
+                
                 <div id="instructions" class="collapse">
                     <h4>Find a matching pair! <br>
                         A match: if two cards turned picture-side-up are identical. <br>
@@ -33,118 +40,25 @@
                     Have fun!</h4></div>
                   </div>
                     <h3 data-toggle="collapse" data-target="#game-instructions">
-                     <div id="game-instructions" class="collapse"> 
+                    <div id="game-instructions" class="collapse"> 
             </nav>
         </div>
 </header>
+   
+
 <div class="container"> 
     <div class="game-functions-wrapper text-center">
         <h1 class="pb-5 title"> Memory <i class="fas fa-brain bounce"></i> Game</h1>
-    <button type="button" class="btn btn-lg start mb-4">START GAME</button>
-<div class="d-flex justify-content-between pb-4">
-    <h2 class="countdown">
-        <i class="fas fa-hourglass-half"></i>Time left:<span class="countdown-timer">90</span>
-    </h2>
-    <div>
-         <h2>Flipped Cards: 0</h2>
-    </div>
+        <button type="button" class="btn btn-lg mb-4 start-game">START GAME</button>
+<div class="d-flex justify-content-between pb-4 game-stats">
+    <h2 class="score">Score: <span class="score-amount">0</span></h2>    
+    <h2 class="click">Flipped Cards: <span class="flipped-amount">0</span></h2>
 </div>
 </div>
-<div class="row card-wrapper">
-    <div class="col-3"> 
-        <div class="card">
-            <img class="card-image" src="assets/images/1.png" alt="cartoon funny face" style="display: none;">
-        </div>
-    </div>
-    <div class="col-3"> 
-        <div class="card">
-            <img class="card-image" src="assets/images/2.png" alt="cartoon funny face" style="display: none;">
-        </div>
-    </div>
-    <div class="col-3"> 
-        <div class="card">
-            <img class="card-image" src="assets/images/15.png" alt="cartoon funny face" style="display: none;">
-        </div>
-    </div>
-    <div class="col-3"> 
-        <div class="card">
-            <img class="card-image" src="assets/images/9.png" alt="cartoon funny face" style="display: none;">
-        </div>
-    </div>
-    <div class="col-3"> 
-        <div class="card">
-            <img class="card-image" src="assets/images/1.png" alt="cartoon funny face" style="display: none;">
-        </div>
-    </div>
-    <div class="col-3"> 
-        <div class="card">
-            <img class="card-image" src="assets/images/2.png" alt="cartoon funny face" style="display: none;">
-        </div>
-    </div>
-    <div class="col-3"> 
-        <div class="card">
-            <img class="card-image" src="assets/images/15.png" alt="cartoon funny face" style="display: none;">
-        </div>
-    </div>
-    <div class="col-3"> 
-        <div class="card">
-            <img class="card-image" src="assets/images/9.png" alt="cartoon funny face" style="display: none;">
-        </div>
-    </div>
-    <div class="col-3"> 
-        <div class="card">
-            <img class="card-image" src="assets/images/5.png" alt="cartoon funny face" style="display: none;">
-        </div>
-    </div>
-    <div class="col-3"> 
-        <div class="card">
-            <img class="card-image" src="assets/images/6.png" alt="cartoon funny face" style="display: none;">
-        </div>
-    </div>
-    <div class="col-3"> 
-        <div class="card">
-            <img class="card-image" src="assets/images/7.png" alt="cartoon funny face" style="display: none;">
-        </div>
-    </div>
-    <div class="col-3"> 
-        <div class="card">
-            <img class="card-image" src="assets/images/10.png" alt="cartoon funny face" style="display: none;">
-        </div>
-    </div>
-    <div class="col-3"> 
-        <div class="card">
-            <img class="card-image" src="assets/images/5.png" alt="cartoon funny face" style="display: none;">
-        </div>
-    </div>
-    <div class="col-3"> 
-        <div class="card">
-            <img class="card-image" src="assets/images/6.png" alt="cartoon funny face" style="display: none;">
-        </div>
-    </div>
-    <div class="col-3"> 
-        <div class="card">
-            <img class="card-image" src="assets/images/7.png" alt="cartoon funny face" style="display: none;">
-        </div>
-    </div>
-    <div class="col-3"> 
-        <div class="card">
-            <img class="card-image" src="assets/images/10.png" alt="cartoon funny face" style="display: none;">
-        </div>
-    </div>
-</div>
-
-
-<div>Stats:</div>
-
-<img src="assets/media/play.png" id="playIcon" alt="play" onclick="HandleAudio()">
-<audio id="gameSong">
-    <source src="assets/media/gameSong.mp3" type="audio/mp3">
-</audio>
-
-</div>
+<div class="row card-wrapper"></div>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="assets/js/main.js"></script>  
+<script src="assets/js/main.js"></script>  
 </body>
 </html>

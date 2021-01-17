@@ -50,7 +50,7 @@ width: 100%;
 
 /* Buttons */
 
-.start {
+.start-game {
 background-color: #1ae0ab;
 color: #0C090D;
 font-size: 1.70rem;
@@ -75,6 +75,10 @@ border-color:#1ae0ab;
 .timer {
     display: flex;
   
+}
+
+.music i {
+    font-size: 24px;
 }
 
 /* Media  */
