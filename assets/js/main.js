@@ -5,28 +5,29 @@ let flippedAmount = document.querySelector(".flipped-amount");
 let startGame = document.querySelector(".start-game");
 
 let isPlaying;
-let cardsSelected = [];
+let cardSelected = [];
+let cardIndex = [];
 let cardsMatched = 0;
 let clickAmount = 0;
 
 //define cards
 let imgArray = [
-  { img: "assets/images/1.png" },
-  { img: "assets/images/1.png" },
+  { img: "assets/images/10.png" },
+  { img: "assets/images/10.png" },
   { img: "assets/images/2.png" },
   { img: "assets/images/2.png" },
-  { img: "assets/images/3.png" },
-  { img: "assets/images/3.png" },
+  { img: "assets/images/9.png" },
+  { img: "assets/images/9.png" },
   { img: "assets/images/4.png" },
   { img: "assets/images/4.png" },
-  { img: "assets/images/5.png" },
-  { img: "assets/images/5.png" },
+  { img: "assets/images/15.png" },
+  { img: "assets/images/15.png" },
   { img: "assets/images/6.png" },
   { img: "assets/images/6.png" },
   { img: "assets/images/7.png" },
   { img: "assets/images/7.png" },
-  { img: "assets/images/8.png" },
-  { img: "assets/images/8.png" },
+  { img: "assets/images/16.png" },
+  { img: "assets/images/16.png" },
 ];
 
 $(document).ready(function(){
@@ -63,32 +64,32 @@ function turnCard() {
   //get selected card
   let thisCard = this.dataset.id;
   let thisImg = imgArray[thisCard].img;
-  cardsSelected.push(thisImg);
-  
+  cardSelected.push(thisImg);
+  cardIndex.push(thisCard);
+
   this.setAttribute("src", imgArray[thisCard].img);
-  if (cardSelected.length === 2) {
-    setTimeout(checkIfMatch, 500);
-  }
+    if (cardSelected.length === 2) {
+        setTimeout(checkIfMatch, 500);
+      }
 }
 
 function checkIfMatch() {
   //get images
   let imgs = document.querySelectorAll("img");
-  let firstCard = cardSelected[0];
-  let secondCard = cardSelected[1];
 
   //compare images if selected cards match
-  if (cardsSelected[0] === cardsSelected[1] && firstCard !== secondCard) {
+  if (cardSelected[0] === cardSelected[1] && cardIndex[0] !== cardIndex[1]) {
     cardsMatched += 1;
     scoreAmount.innerHTML = cardsMatched;
     setTimeout(checkIfWon, 500);
   } 
   //dont match
   else {
-    imgs[firstCard].setAttribute("src", "assets/images/0.jpeg");
-    imgs[secondCard].setAttribute("src", "assets/images/0.jpeg");
+    imgs[cardIndex[0]].setAttribute("src", "assets/images/0.jpeg");
+    imgs[cardIndex[1]].setAttribute("src", "assets/images/0.jpeg");
   }
-  cardsSelected = [];
+  cardSelected = [];
+  cardIndex = [];
   clickAmount += 1;
   flippedAmount.innerHTML = clickAmount;
 }
@@ -132,3 +133,17 @@ function HandleAudio() {
     playAudio();
   }
 }
+
+// Instructions
+/*
+var i = 0;
+var txt = 'instructions';
+var speed = 50;
+
+function typeWriter() {
+if (i < txt.lenth) {
+    document.getElementById('instructions').innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter,speed);
+}
+}; */
