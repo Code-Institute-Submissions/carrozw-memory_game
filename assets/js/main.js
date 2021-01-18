@@ -97,6 +97,7 @@ function checkIfMatch() {
 function checkIfWon() {
   if (cardsMatched == imgArray.length / 2) {
       //TODO add alert/modal to notify winner
+      $('#modalWinner').modal('show');
     console.log("winner winner");
   }
 }
@@ -134,16 +135,3 @@ function HandleAudio() {
   }
 }
 
-// Instructions
-/*
-var i = 0;
-var txt = 'instructions';
-var speed = 50;
-
-function typeWriter() {
-if (i < txt.lenth) {
-    document.getElementById('instructions').innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter,speed);
-}
-}; */
