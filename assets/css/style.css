@@ -1,52 +1,50 @@
 body {
-    font-family:'Fontdiner Swanky', cursive;
+    font-family: 'Fontdiner Swanky', cursive, sans-serif;
     color: #0C090D;
     font-weight: bolder;
-    background-color: #F9C22E;
-    background-image: linear-gradient(to bottom right, #F15946 ,#F9C22E );
+    background-image: url(/assets/images/bg-sparklyRainbow.jpeg );
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-
-    
 h1 {
     text-align: center;
     font-size: 3.5rem;
 }
- h2 {
-     font-size: 2.75rem;
-    
- }
+
+h2 {
+    font-size: 2.75rem;
+}
 
 /* instructions */
 
-.instructions-title  {
-    font-size: 26px; 
+.instructions-title {
+    font-size: 26px;
     cursor: pointer;
-  
- }
+}
 
- /* instruction button */
+/* instruction button */
 
- .arrow {
+.arrow {
     background: transparent;
     border: transparent;
-  }
- 
-  .arrow:focus {
+}
+
+.arrow:focus {
     outline: transparent;
 }
 
 /* Cards */
 
 .card-wrapper {
-padding: 0 150px;
+    padding: 0 150px;
 }
 
 .card {
     width: 150px;
     height: 150px;
     background: radial-gradient(#e01a81, #e01a70, #E01A4F);
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     margin: 10px;
 }
@@ -56,28 +54,32 @@ padding: 0 150px;
 }
 
 img {
-height: auto;
-width: 100%;
+    height: auto;
+    width: 100%;
 }
+
 .row {
     justify-content: center;
 }
 
-/* Buttons */
+/* start button */
 
 .start-game {
-background-color: #1ae0ab;
-color: #0C090D;
-font-size: 1.70rem;
-border-color:#1ae0ab;
-
+    background-color: #1ae0ab;
+    color: #0C090D;
+    font-size: 1.70rem;
+    border-color: #1ae0ab;
+    border-radius: 10px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+
 .start-game:hover {
     background-color: #53B3CB;
     color: #0C090D;
 }
+
 .start-game:active {
-    background-color:#1ae0ab;
+    background-color: #1ae0ab;
 }
 
 /*  music */
@@ -89,7 +91,6 @@ border-color:#1ae0ab;
 
 .timer {
     display: flex;
-  
 }
 
 .music i {
@@ -97,18 +98,20 @@ border-color:#1ae0ab;
 }
 
 /* Modal */
+
 .modal-header {
     border-bottom: none;
 }
 
 .modal-content {
-background-image: url(/assets/images/bg-sparkle.jpg);
-border-radius: 1rem;
- }
+    background-image: url(/assets/images/bg-sparkle.jpg);
+    border-radius: 1rem;
+}
 
 .modal-body p {
     font-size: 26px;
 }
+
 .modal-body img {
     height: 200px;
     width: 150px;
@@ -120,11 +123,17 @@ border-radius: 1rem;
 
 /* Media  */
 
-@media only screen and (max-width: 992px) {
-.card-wrapper {
-    padding: 0px;
+
+@media only screen and (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
 }
-    
+
+@media only screen and (max-width: 992px) {
+    .card-wrapper {
+        padding: 0px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -132,23 +141,22 @@ border-radius: 1rem;
         height: 100px;
         width: 100px;
     }
-        
-    }
+}
+
 @media only screen and (max-width: 576px) {
     .card {
         height: 50px;
         width: 50px;
     }
-        
-    }
+}
 
-    /* brain */
+/* brain */
 
-    .fa-brain {
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-        transform-origin: bottom;
-    }
+.fa-brain {
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
 
 .bounce {
     animation-name: bounce;
@@ -156,50 +164,58 @@ border-radius: 1rem;
 }
 
 @keyframes bounce {
-    0%   { transform: scale(1,1)    translateY(0); }
-        10%  { transform: scale(1.1,.9) translateY(0); }
-        30%  { transform: scale(.9,1.1) translateY(-15px); }
-        50%  { transform: scale(1,1)    translateY(0); }
-        100% { transform: scale(1,1)    translateY(0); }
+    0% {
+        transform: scale(1, 1) translateY(0);
     }
+    10% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+    30% {
+        transform: scale(.9, 1.1) translateY(-15px);
+    }
+    50% {
+        transform: scale(1, 1) translateY(0);
+    }
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
 
-    /* instructions */
+/* instructions */
 
-/* notes wiggle    get back to this!!!!  
-
-.wiggle {
-    animation: 2s;
-  }
-  
-  @keyframes wiggle {
-    0% { transform: translate(1px, 1px) rotate(0deg);}
-    20% { transform: translate(1px, -1px) rotate(1deg);}
-    40% { transform: translate(-1px, 2px) rotate(-1deg);}
-    50% { transform: translate(-3px, 1px) rotate(0deg);}
-    60% { transform: translate(3px, 1px) rotate(-1deg);}
-    70% { transform: translate(-1px, -1px) rotate(1deg);}
-    80% { transform: translate(1px, 2px) rotate(0deg);}
-    90% { transform: translate(1px, -2px) rotate(1deg);}
-    100% { transform: translate(1px, 1px)rotate(-1deg);}
-    
-  };
-  */
-  
-  .glow {
+.glow {
     font-size: 80px;
     color: #0C090D;
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
-  }
-  
-  @-webkit-keyframes glow {
+}
+
+@-webkit-keyframes glow {
     from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
     }
-    
     to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
-  }
+}
+/* wiggles the music note */
+
+ .fa-music {
+    animation: wiggle 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+
+}
+      
+@keyframes wiggle {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+      }
+
+    
