@@ -61,7 +61,7 @@ At the same time, it's not too crazy, so even older kids (adults) can stand the 
 * https://validator.w3.org/nu/#textarea     ****
 * https://jigsaw.w3.org/css-validator/#validate_by_input   ***
 * https://webaim.org/resources/contrastchecker/    ****
-* https://jshint.com/  ****
+* https://jshint.com/  &#10004
 
 ## Further/manually testing:
 
