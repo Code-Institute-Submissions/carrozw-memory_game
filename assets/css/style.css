@@ -11,6 +11,8 @@ body {
 h1 {
     text-align: center;
     font-size: 3.5rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem; 
 }
 
 h2 {
@@ -323,6 +325,17 @@ img {
         height: 50px;
         width: 50px;
     }
+    .instructions-title {
+        font-size: 20px;
+    }
+    .music i {
+        font-size: 24px;
+    }
+    .glow {
+        font-size: 38px;
+        margin-bottom: 2rem;
+    }
+    
 }
 
 
