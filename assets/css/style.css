@@ -2,7 +2,7 @@ body {
     font-family: 'Fontdiner Swanky', cursive, sans-serif;
     color: #0C090D;
     font-weight: bolder;
-    background-image: url(/assets/images/bg-sparklyRainbow.jpeg );
+    background-image: url(assets/images/bg-sparklyRainbow.jpeg );
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 150px;
@@ -106,7 +106,7 @@ img {
 }
 
 .modal-content {
-    background-image: url(/assets/images/bg-sparkle.jpg);
+    background-image: url(assets/images/bg-sparkle.jpg);
     border-radius: 1rem;
 }
 
