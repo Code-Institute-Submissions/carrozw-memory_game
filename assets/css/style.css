@@ -121,35 +121,6 @@ img {
     border-top: none;
 }
 
-/* Media  */
-
-
-@media only screen and (max-width: 768px) {
-    h2 {
-        font-size: 2rem;
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    .card-wrapper {
-        padding: 0px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .card {
-        height: 100px;
-        width: 100px;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    .card {
-        height: 50px;
-        width: 50px;
-    }
-}
-
 /* brain */
 
 .fa-brain {
@@ -181,7 +152,7 @@ img {
     }
 }
 
-/* instructions */
+/* animations */
 
 .glow {
     font-size: 80px;
@@ -217,5 +188,40 @@ img {
   70% { transform: translate(3px, 1px) rotate(-1deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
       }
+
+/* Media  */
+
+@media only screen and (max-width: 992px) {
+    .card-wrapper {
+        padding: 0px;
+    }
+    .glow {
+        font-size: 60px;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+    .card {
+        height: 100px;
+        width: 100px;
+    }
+    .glow {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .card {
+        height: 50px;
+        width: 50px;
+    }
+}
+
 
     
