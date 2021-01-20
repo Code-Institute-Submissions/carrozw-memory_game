@@ -20,8 +20,7 @@ At the same time, it's not too crazy, so even older kids (adults) can stand the 
 
 ## Wireframe
 
-* ![Wireframe LG](/assets/images/wireframe-large-devices.png)
-* ![Wireframe SM](/assets/images/wireframe-small-devices.png)
+* Download wireframe [Wireframe PDF](/assets/pdf/wireframe.pdf)
 
 ## Features
 
