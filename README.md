@@ -1,3 +1,5 @@
+![Mockup](/assets/images/memoryGameMockup.png)
+
 # UX
 
 who is it for?
@@ -18,7 +20,8 @@ At the same time, it's not too crazy, so even older kids (adults) can stand the 
 
 ## Wireframe
 
-* 
+* ![Wireframe](/)
+
 
 ## Features
 
@@ -64,6 +67,12 @@ At the same time, it's not too crazy, so even older kids (adults) can stand the 
 * My kids played the game which exposed some bugs.
 * Different browsers    ****
 
+### Known bugs / issues
+
+* When clicking too quickly on next card, the first card may get stuck.
+* Had trouble figuring out why turn card event listener wasn't working.
+* Had trouble with the reset function
+
 ## Deployment
 
 * VS CODE ****
@@ -73,13 +82,12 @@ At the same time, it's not too crazy, so even older kids (adults) can stand the 
 ## Code
 
 * https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp
-* https://jsfiddle.net/satyasrinivaschekuri/y03m54Le/ timern... ****
 * https://css-tricks.com/making-css-animations-feel-natural/  - brain animation
 * https://www.jamendo.com/album/185935/children - the game song
 * https://stackoverflow.com/questions/52505380/jquery-button-play-pause-audio-and-switch-images - audio ****
-* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_glowing_text - Made my title glow
+* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_glowing_text - glowing title
 * https://www.freepik.com/free-vector/cute-unicorn-floating-with-balloon-cartoon-vector-icon-illustration_11047602.htm#position=0  - Back of cards ***
-* https://www.ppt-backgrounds.net/rainbow/3644-unicorn-and-rainbow-art-backgrounds.html - Background image
+* https://www.biob.in/2019/01/bouncing-text-animation-effect-using.html - Code to the bouncing instruction title.
 
 ### Content
 
@@ -90,8 +98,9 @@ At the same time, it's not too crazy, so even older kids (adults) can stand the 
 
 * *****
 
-https://www.vectorstock.com/royalty-free-vector/funny-colorful-square-faces-set-vector-14015938
-
+* https://www.vectorstock.com/royalty-free-vector/funny-colorful-square-faces-set-vector-14015938
+* www.smartmockups.com 
+* https://www.ppt-backgrounds.net/rainbow/3644-unicorn-and-rainbow-art-backgrounds.html - Background image
 ### Aknowledgements
 
 * My mentor, Anna Villanueva who offers great support and valid input.
