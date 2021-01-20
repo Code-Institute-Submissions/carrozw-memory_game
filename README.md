@@ -58,10 +58,10 @@ At the same time, it's not too crazy, so even older kids (adults) can stand the 
 
 ## Testing  - not done yet
 
-* https://validator.w3.org/nu/#textarea     ****
-* https://jigsaw.w3.org/css-validator/#validate_by_input   ***
-* https://webaim.org/resources/contrastchecker/    ****
-* https://jshint.com/  &#10004
+* https://validator.w3.org/nu/#textarea    
+* https://jigsaw.w3.org/css-validator/#validate_by_input   
+* https://webaim.org/resources/contrastchecker/    
+* https://jshint.com/  
 
 ## Further/manually testing:
 
@@ -103,6 +103,8 @@ At the same time, it's not too crazy, so even older kids (adults) can stand the 
 * https://www.smartmockups.com 
 * https://www.ppt-backgrounds.net/rainbow/3644-unicorn-and-rainbow-art-backgrounds.html - Background image
 * https://www.freepik.com/free-vector/
+* https://redketchup.io/icon-editor
+* https://fontawesome.com/
 
 # Aknowledgements
 

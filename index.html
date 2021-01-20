@@ -22,14 +22,14 @@
                 <div class="instructions-title" data-toggle="collapse" data-target="#instructions"> <i>I</i> <i>n</i> <i>s</i> <i>t</i> <i>r</i> <i>u</i> <i>c</i> <i>t</i> <i>i</i> <i>o</i> <i>n</i> <i>s</i> <button class="arrow"><i class="fas fa-arrow-down"></i></button></div>
                 <div class="music">
                     <i class="fas fa-music wiggle"></i>
-                    <i class="fas fa-play" id="playIcon" alt="play" onclick="HandleAudio()"><audio id="gameSong">
+                    <i class="fas fa-play" id="playIcon" onclick="HandleAudio()"><audio id="gameSong">
                         <source src="assets/media/gameSong.mp3" type="audio/mp3">
                     </audio></i>
                 </div>
                 
-                <div id="instructions" class="collapse">
+                <div id="instructions" class="collapse">    
                     <h4>Find a matching pair! <br>
-                        A match: if two cards turned picture-side-up are identical. <br>
+                    A match: if two cards turned picture-side-up are identical. <br>
                     
                     A miss: if the two cards turned over are not identical. <br>
                     
@@ -40,9 +40,10 @@
                     How many flips and how much time did it take you to match all pairs?! <br>
                     
                     Have fun!</h4></div>
-                  </div>
-                    <h3 data-toggle="collapse" data-target="#game-instructions">
-                    <div id="game-instructions" class="collapse"> 
+
+                    <div data-toggle="collapse" data-target="#game-instructions">
+                    </div>
+                    <div id="game-instructions" class="collapse"></div>
             </nav>
         </div>
 </header>
@@ -58,6 +59,7 @@
 </div>
 </div>
 <div class="row card-wrapper"></div>
+</div>
 <div class="modal fade modal-winner" id="modalWinner" role="dialog">
     <div class="modal-dialog">
     
