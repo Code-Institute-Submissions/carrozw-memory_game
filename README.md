@@ -55,18 +55,23 @@ At the same time, it's not too crazy, so even older kids (adults) can stand the 
 * Font Awesome
 * JQuery 
 * Draw.io
+* Visual Studio Code
 
-## Testing  - not done yet
+## Testing 
 
 * https://validator.w3.org/nu/#textarea    
 * https://jigsaw.w3.org/css-validator/#validate_by_input   
 * https://webaim.org/resources/contrastchecker/    
 * https://jshint.com/  
 
+
 ## Further/manually testing:
 
 * My husband and kids played the game which exposed some bugs.
-* Different browsers    ****
+* Different browsers   
+- Safari 14.0.2 - (latest on OSX)
+- Chrome 87.0.4280.141 - (latest on OSX + Android)
+- Firefox 84.0.2 - (latest on OSX)
 
 ## Known bugs / issues
 
@@ -77,7 +82,9 @@ At the same time, it's not too crazy, so even older kids (adults) can stand the 
 
 ## Deployment
 
-* VS CODE ****
+ - In my GitHub pages I chose my project then,
+ - Settings
+ - selected Branch 'master' / 'root'.
 
 # Credits
 
@@ -97,8 +104,6 @@ At the same time, it's not too crazy, so even older kids (adults) can stand the 
 
 ## Media
 
-******
-
 * https://www.vectorstock.com/royalty-free-vector/funny-colorful-square-faces-set-vector-14015938
 * https://www.smartmockups.com 
 * https://www.ppt-backgrounds.net/rainbow/3644-unicorn-and-rainbow-art-backgrounds.html - Background image
@@ -110,4 +115,4 @@ At the same time, it's not too crazy, so even older kids (adults) can stand the 
 
 * My mentor, Anna Villanueva who offers great support and valid input.
 * My husband, who's been my tutor support deluxe through this project.
-* Multiple sources of videos and stack overflow.
+* Multiple sources of videos and stack overflow for inspiration.
