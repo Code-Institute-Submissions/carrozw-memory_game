@@ -38,6 +38,7 @@ At the same time, it's not too crazy, so even older kids (adults) can stand the 
 * Timer.
 * Different levels, such as more cards, and different layout of the cards.
 * High score
+* Switch down arrow to an up arrow when instructions are displayed.
 
 # Technologies Used
 
@@ -67,11 +68,30 @@ At the same time, it's not too crazy, so even older kids (adults) can stand the 
 
 ## Further/manually testing:
 
-* My husband and kids played the game which exposed some bugs.
-* Different browsers   
+My husband and kids played the game which exposed some bugs.
+- mainly when clicking on the next card too quickly the previous clicked card may get stuck. My son manged to do something, sort of froze it all by dragging and clicking (not sure), but I couldn't replicate that issue. He just got skills I guess...
+
+## Different browsers, I've tried all functions below on these browsers:
+
 - Safari 14.0.2 - (latest on OSX)
 - Chrome 87.0.4280.141 - (latest on OSX + Android)
 - Firefox 84.0.2 - (latest on OSX)
+
+### Play/Reset button
+- In the middle of a game or when finished, click on the play/reset button and a new shuffled board is created.
+
+### Instructions
+- Click on instructions and the instruction steps will toggle down, when clicked again it toggle right back up again.
+
+### Music
+- Click the play button and the music will play. Click the pause button and the music stops.
+
+### Flipping the cards
+- Flipped all cards until all the cards have been matched.
+
+### Receiving the happy finish message/modal
+- Received the modal every time I've finished the game. And it disappears when clicking on the close or X on the modal.
+
 
 ## Known bugs / issues
 
@@ -82,10 +102,9 @@ At the same time, it's not too crazy, so even older kids (adults) can stand the 
 
 ## Deployment
 
- - In my GitHub pages I chose my project then,
- - Settings
- - selected Branch 'master' / 'root'.
-
+ - In my GitHub repository I go into settings, scroll down to GitHub pages.
+ Select source (branch master, root) and then save. Now everytime I commit and push it's published to https://carrozw.github.io/memory_game/
+ 
 # Credits
 
 ## Code
@@ -99,7 +118,7 @@ At the same time, it's not too crazy, so even older kids (adults) can stand the 
 
 ## Content
 
-* All content was written by the developer, except for the snippets already mentioned.
+* All content was written by the developer, except for the snippets already mentioned above.They have however been modified to suit my project.
 
 
 ## Media
@@ -116,3 +135,4 @@ At the same time, it's not too crazy, so even older kids (adults) can stand the 
 * My mentor, Anna Villanueva who offers great support and valid input.
 * My husband, who's been my tutor support deluxe through this project.
 * Multiple sources of videos and stack overflow for inspiration.
+* Tutor support, helping with my path to my background image when deployed.

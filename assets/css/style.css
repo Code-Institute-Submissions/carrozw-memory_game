@@ -26,6 +26,10 @@ h2 {
     font-size: 26px;
     cursor: pointer;
 }
+.instructions-title:after {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f063';
+}
 
 /* instruction button */
 
